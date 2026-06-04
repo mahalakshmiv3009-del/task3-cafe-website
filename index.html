@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Brew Café</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+nav{
+    background:#000;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#facc15;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#facc15;
+    border:none;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:70px 40px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* About */
+.about{
+    text-align:center;
+}
+
+/* Stats */
+.stats{
+    background:#f97316;
+    color:white;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.stats h1{
+    font-size:50px;
+}
+
+/* Services */
+.services{
+    background:#eee;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* Gallery */
+.gallery{
+    background:white;
+}
+
+.gallery-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.gallery-container img{
+    width:280px;
+    border-radius:15px;
+}
+
+/* Founder */
+.owner{
+    text-align:center;
+    background:#f9f9f9;
+}
+
+.owner img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin:20px 0;
+}
+
+/* Reviews */
+.reviews{
+    background:white;
+}
+
+/* Contact */
+.contact{
+    background:#eee;
+}
+
+.contact-form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:12px;
+    background:#f97316;
+    color:white;
+    border:none;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Fresh Brew Café ☕</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Fresh Brew Café ☕</h1>
+        <p>Experience the finest coffee and delicious bakery items.</p>
+        <button class="btn">Explore Menu</button>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Fresh Brew Café is dedicated to serving premium coffee,
+        fresh bakery items, and creating unforgettable experiences
+        for our customers.
+    </p>
+</section>
+
+<section class="stats">
+    <div class="stats-container">
+        <div>
+            <h1>10K+</h1>
+            <p>Customers</p>
+        </div>
+
+        <div>
+            <h1>50+</h1>
+            <p>Coffee Varieties</p>
+        </div>
+
+        <div>
+            <h1>15+</h1>
+            <p>Years Experience</p>
+        </div>
+
+        <div>
+            <h1>4.9★</h1>
+            <p>Customer Rating</p>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+            <h3>☕ Premium Coffee</h3>
+            <p>Freshly brewed coffee made from the finest beans.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+            <h3>🍰 Bakery Items</h3>
+            <p>Delicious cakes and pastries baked daily.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+            <h3>🚚 Home Delivery</h3>
+            <p>Fast and reliable delivery service.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-container">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    </div>
+</section>
+
+<section class="owner">
+    <h2>Meet Our Founder</h2>
+
+    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+    <h3>Sarah Johnson</h3>
+
+    <p>
+        Passionate about serving premium coffee and creating memorable experiences.
+    </p>
+</section>
+
+<section class="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐ Amazing coffee and friendly staff.</p>
+            <h4>- Priya</h4>
+        </div>
+
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐ Best café experience in town.</p>
+            <h4>- Rahul</h4>
+        </div>
+
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐ Great ambiance and delicious pastries.</p>
+            <h4>- Sneha</h4>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
+<footer>
+    © 2026 Fresh Brew Café | Designed with HTML & CSS
+</footer>
+
+<a href="https://wa.me/919999999999" class="whatsapp">💬</a>
+
+</body>
+</html>
